@@ -3,7 +3,7 @@ package com.example.coincap.coin_cap_feature.di
 import com.example.coincap.coin_cap_feature.data.remote.CoinCapApi
 import com.example.coincap.coin_cap_feature.data.repository.CoinRepositoryImpl
 import com.example.coincap.coin_cap_feature.domain.repository.CoinRepository
-import com.plcoding.cryptocurrencyappyt.common.Constants
+import com.example.coincap.coin_cap_feature.common.Constants
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

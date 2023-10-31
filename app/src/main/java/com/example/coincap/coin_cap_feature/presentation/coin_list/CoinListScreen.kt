@@ -1,5 +1,6 @@
 package com.example.coincap.coin_cap_feature.presentation.coin_list
 
+import android.util.Log
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -15,6 +16,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
+import com.example.coincap.coin_cap_feature.presentation.Screen
 import com.plcoding.cryptocurrencyappyt.presentation.coin_list.CoinListViewModel
 import com.plcoding.cryptocurrencyappyt.presentation.coin_list.components.CoinListItem
 
@@ -30,7 +32,8 @@ fun CoinListScreen(
                 CoinListItem(
                     coin = coin,
                     onItemClick = {
-//                        navController.navigate(Screen.CoinDetailScreen.route + "/${coin.id}")
+                        Log.d("Debugging","Pass coin id pass into navigration: ${coin.id.toString()}")
+                        navController.navigate(Screen.CoinDetailScreen.route + "/${coin.id.toString()}")
                     }
                 )
             }
